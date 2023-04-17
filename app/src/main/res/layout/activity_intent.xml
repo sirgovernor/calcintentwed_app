@@ -37,7 +37,7 @@
         android:text="call"
         android:textAlignment="viewStart"
         android:textSize="20sp"
-        app:cornerRadius="30sp"
+        app:cornerRadius="30px"
         app:icon="@android:drawable/sym_action_call"
         app:iconPadding="1px"
         app:iconTint="#24D15E"

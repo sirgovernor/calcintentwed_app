@@ -22,7 +22,12 @@ class WebActivity : AppCompatActivity() {
         mywebview.apply {
             loadUrl( "https://www.instagram.com/")
             settings.javaScriptEnabled = true
-          //  settings.safeBrowsingEnabled = true
+           settings.safeBrowsingEnabled = true
         }
+    }
+
+    override fun onBackPressed() {
+        if (mywebview.canGoBack())mywebview.goBack() else
+        super.onBackPressed()
     }
 }
